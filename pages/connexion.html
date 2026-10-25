@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connexion | CampusConnect UMECI</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/connexion.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="logo">
+            UMECI<span>SOCIAL</span>
+        </a>
+
+        <a href="../index.html" class="btn-inscription">
+            Retour à l'accueil
+        </a>
+    </header>
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <h1>Bon retour ! 👋</h1>
+
+            <p class="login-description">
+                Connecte-toi pour retrouver ta communauté étudiante.
+            </p>
+
+            <form id="login-form">
+
+                <div class="form-group">
+                    <label for="email">E-mail universitaire</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Ton adresse e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="motdepasse">Mot de passe</label>
+
+                    <input
+                        type="password"
+                        id="motdepasse"
+                        name="motdepasse"
+                        placeholder="Ton mot de passe"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="login-button">
+                    Se connecter
+                </button>
+
+                <p id="login-message" aria-live="polite"></p>
+
+            </form>
+
+            <p class="signup-link">
+                Tu n'as pas encore de compte ?
+                <a href="inscription.html">Créer un compte</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="../js/connexion.js"></script>
+
+</body>
+</html>

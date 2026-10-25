@@ -1,0 +1,306 @@
+/* 1. Réglages généraux */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #8B0000;
+    --primary-dark: #600000;
+    --background: #f4f7fc;
+    --white: #ffffff;
+    --text: #1d2939;
+    --muted: #667085;
+    --border: #e4e7ec;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* 2. En-tête */
+
+.header {
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 5%;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--text);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigation a {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.navigation a:hover {
+    color: var(--primary);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.btn-inscription,
+.btn-primary {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-inscription:hover,
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+/* 3. Contenu principal */
+
+.container {
+    width: 92%;
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+/* 4. Présentation */
+
+.welcome {
+    background: linear-gradient(120deg, #8B0000, #600000);
+    color: var(--white);
+    padding: 45px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.surtitle {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.welcome h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.welcome .btn-primary {
+    background: var(--white);
+    color: var(--primary);
+}
+
+/* 5. Organisation en colonnes */
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr) 250px;
+    gap: 24px;
+    align-items: start;
+}
+
+.sidebar,
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar h2,
+.right-sidebar h2 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--muted);
+}
+
+.sidebar a:hover {
+    background: #e8efff;
+    color: var(--primary);
+}
+
+/* 6. Cartes */
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.right-sidebar .card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-size: 22px;
+}
+
+.section-heading span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* 7. Formulaire de publication */
+
+.publication-form {
+    margin-bottom: 20px;
+}
+
+.publication-form h3 {
+    margin-bottom: 15px;
+}
+
+.publication-form textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+}
+
+.publication-form textarea:focus {
+    border-color: var(--primary);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.form-footer span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+#form-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* 8. Publications */
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.post-header h3 {
+    font-size: 15px;
+}
+
+.post-header p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: #e8efff;
+    color: var(--primary);
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.post > p {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.post-actions {
+    display: flex;
+    gap: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 18px;
+    padding-top: 14px;
+}
+
+.post-actions button {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+}
+
+.post-actions button:disabled {
+    cursor: default;
+}
+
+/* 9. Pied de page */
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--muted);
+    font-size: 13px;
+}

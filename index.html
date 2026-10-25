@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect UMECI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            UMECI<span>SOCIAL</span>
+        </a>
+
+        <button id="menu-toggle" class="menu-toggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation" class="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#actualites">Actualités</a>
+            <a href="#communautes">Communautés</a>
+            <a href="pages/connexion.html">Connexion</a>
+        </nav>
+
+        <a href="pages/inscription.html" class="btn-inscription">
+            S'inscrire
+        </a>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="accueil" class="container">
+
+        <!-- Présentation -->
+        <section class="welcome">
+            <div>
+                <p class="surtitle">LA COMMUNAUTÉ ÉTUDIANTE UMECI</p>
+
+                <h1>Bienvenue sur UMECI SOCIAL</h1>
+
+                <p>
+                    Échange, partage et reste informé de la vie
+                    universitaire avec les autres étudiants.
+                </p>
+
+                <a href="#inscription" class="btn-primary">
+                    Rejoindre la communauté
+                </a>
+            </div>
+        </section>
+
+        <!-- Organisation de la page -->
+        <div class="layout">
+
+            <!-- Menu latéral -->
+            <aside class="sidebar">
+                <h2>Navigation</h2>
+
+                <a href="#accueil">🏠 Accueil</a>
+                <a href="#actualites">📰 Actualités</a>
+                <a href="#communautes">👥 Communautés</a>
+                <a href="#ressources">📚 Ressources</a>
+                <a href="#evenements">📅 Événements</a>
+            </aside>
+
+            <!-- Fil d'actualité -->
+            <section id="actualites" class="feed">
+
+                <div class="section-heading">
+                    <h2>Fil d'actualité</h2>
+                    <span>UMECI SOCIAL</span>
+                </div>
+
+                <!-- Zone de publication -->
+                <div class="card publication-form">
+                    <h3>Partager une information</h3>
+
+                    <textarea
+                        id="post-content"
+                        placeholder="Quoi de neuf sur le campus ?"
+                        rows="3"
+                    ></textarea>
+
+                    <div class="form-footer">
+                        <span>Partage tes idées avec la communauté.</span>
+
+                        <button id="publish-btn" class="btn-primary">
+                            Publier
+                        </button>
+                    </div>
+
+                    <p id="form-message" aria-live="polite"></p>
+                </div>
+
+                <!-- Publications -->
+                <div id="posts-container">
+
+                    <article class="card post">
+                        <div class="post-header">
+                            <div class="avatar">CC</div>
+
+                            <div>
+                                <h3>UMECI SOCIAL</h3>
+                                <p>Publication de bienvenue</p>
+                            </div>
+                        </div>
+
+                        <p>
+                            Bienvenue sur  UMECI SOCIAL !
+                            Cet espace est conçu pour faciliter
+                            les échanges entre étudiants.
+                        </p>
+
+                        <div class="post-actions">
+                            <button disabled>♡ J'aime</button>
+                            <button disabled>💬 Commenter</button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Informations complémentaires -->
+            <aside class="right-sidebar">
+
+                <div id="communautes" class="card">
+                    <h2>Communautés</h2>
+                    <p>Retrouve les étudiants qui partagent tes intérêts.</p>
+                </div>
+
+                <div id="evenements" class="card">
+                    <h2>Événements</h2>
+                    <p>Découvre les activités de la communauté étudiante.</p>
+                </div>
+
+                <div id="ressources" class="card">
+                    <h2>Ressources</h2>
+                    <p>Un espace pour les documents et supports de cours.</p>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>© 2026 CampusConnect UMECI — Projet étudiant</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

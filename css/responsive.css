@@ -1,0 +1,96 @@
+/* Tablettes */
+
+@media (max-width: 1000px) {
+
+    .layout {
+        grid-template-columns: 180px minmax(0, 1fr);
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    .navigation {
+        gap: 12px;
+    }
+}
+
+/* Téléphones */
+
+@media (max-width: 650px) {
+
+    .header {
+        flex-wrap: wrap;
+        padding: 15px 4%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+        background: transparent;
+        font-size: 25px;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .navigation a {
+        padding: 10px 0;
+    }
+
+    .btn-inscription {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    .welcome {
+        padding: 25px 20px;
+    }
+
+    .welcome h1 {
+        font-size: 26px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .form-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-footer .btn-primary {
+        align-self: flex-end;
+    }
+}

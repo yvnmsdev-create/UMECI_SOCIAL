@@ -1,0 +1,130 @@
+/* ===== PAGE DE CONNEXION ===== */
+
+.login-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7fc;
+}
+
+/* Carte de connexion */
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+    margin-bottom: 12px;
+    color: #1d3557;
+    text-align: center;
+    font-size: 28px;
+}
+
+.login-description {
+    margin-bottom: 30px;
+    color: #667085;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Bouton de connexion */
+
+.login-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8B0000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #600000;
+}
+
+/* Message JavaScript */
+
+#login-message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Lien vers l'inscription */
+
+.signup-link {
+    margin-top: 25px;
+    color: #667085;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.signup-link a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptation aux téléphones */
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px 12px;
+    }
+
+    .login-card {
+        padding: 24px 18px;
+    }
+
+    .login-card h1 {
+        font-size: 24px;
+    }
+}
+/* Agrandir les champs de connexion */
+
+.login-card .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    font-size: 16px;
+    min-height: 52px;
+}
+
+/* Agrandir le bouton */
+
+.login-button {
+    min-height: 52px;
+    font-size: 17px;
+}
+/* Arrondir les champs de connexion */
+.login-card .form-group input {
+    border-radius: 10px;
+}
+
+/* Arrondir le bouton */
+.login-button {
+    border-radius: 10px;
+}
+
+/* Arrondir la carte de connexion */
+.login-card {
+    border-radius: 20px;
+}

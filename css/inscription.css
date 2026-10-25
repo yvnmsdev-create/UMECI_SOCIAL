@@ -1,0 +1,163 @@
+/* ===== PAGE D'INSCRIPTION ===== */
+
+.signup-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7fc;
+}
+
+/* Carte du formulaire */
+
+.signup-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.signup-card h1 {
+    margin-bottom: 10px;
+    color: #1d3557;
+    text-align: center;
+    font-size: 28px;
+}
+
+.signup-description {
+    margin-bottom: 30px;
+    color: #667085;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Champs du formulaire */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #344054;
+    font-weight: 600;
+}
+
+.form-group input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.form-group small {
+    margin-top: 7px;
+    color: #667085;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Case à cocher */
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Bouton */
+
+.signup-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8B0000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.signup-button:hover {
+    background-color: #600000;
+}
+
+/* Messages */
+
+#signup-message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.login-link {
+    margin-top: 25px;
+    text-align: center;
+    color: #667085;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.security-note {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #eff6ff;
+    color: #1e40af;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* Adaptation aux petits écrans */
+
+@media (max-width: 600px) {
+    .signup-container {
+        padding: 20px 12px;
+    }
+
+    .signup-card {
+        padding: 24px 18px;
+    }
+
+    .signup-card h1 {
+        font-size: 24px;
+    }
+}
